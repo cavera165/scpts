@@ -1,0 +1,254 @@
+--C1 Hub
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("C1 Hub", "DarkTheme")
+
+local universalTab = Window:NewTab("Universal")
+local LocalPlayerSection = universalTab:NewSection("LocalPlayer")
+local MyScripts = Window:NewTab("Minhas Scripts")
+local MyScriptsSection = MyScripts:NewSection("Minhas Scripts")
+local OutrasScriptsSection = MyScripts:NewSection("Outras")
+local Visuals = Window:NewTab("Visuals")
+local VisualsSelection = Visuals:NewSection("Visuals")
+local Settings = Window:NewTab("Configurações")
+local SettingsSection = Settings:NewSection("Configurações")
+
+--Universal Tab: LocalPlayer
+
+LocalPlayerSection:NewSlider("Velocidade", "Muda a sua velocidade", 5000, 16, function(s) -- 2000 (MaxValue) | 16 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+LocalPlayerSection:NewSlider("Altura do Pulo", "Muda a altura do seu pulo", 5000, 50, function(jp) -- 2000 (MaxValue) | 50 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = jp
+end)
+
+--Universal Tab: Outras
+
+OutrasScriptsSection:NewButton("Infinite Yield", "Abre o Infinite Yield", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+end)
+
+OutrasScriptsSection:NewButton("CMD-X", "Abre o CMD-X", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+OutrasScriptsSection:NewButton("Domain X", "Abre o Domain X", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+end)
+
+OutrasScriptsSection:NewButton("Unnamed ESP", "Abre o Unnamed ESP", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
+end)
+
+OutrasScriptsSection:NewButton("Eclipse Hub", "Abre o Eclipse Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/Eclipse%20Hub',true))()
+end)
+
+--Visuals: Visuals
+
+VisualsSelection:NewButton("Fullbright", "Liga o Fullbright", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))()
+end)
+
+VisualsSelection:NewButton("NoFog", "Tira o Fog", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cavera165/scpts/main/NoFog", true))()
+end)
+
+
+--Minhas Scripts (Pagas ou Feitas Por mim)
+
+MyScriptsSection:NewDropdown("Kakah Menu", "As versões do Kakah Menu", {"Kakah Menu V2", "Kakah Menu V3", "Option 3"}, function(currentOption)
+    print(loading)
+end)
+
+MyScriptsSection:NewButton("Kakah Menu V2", "Menu V2 do kakazit", function()
+    loadstring(game:HttpGet('https://gist.githubusercontent.com/FriFrai/7dd9b4197e8cd59ab587cb9068c836e6/raw/b47ff3545bd7a788b9aac30495fc344456589fbe/naoeokakamenu'))()
+end)
+
+MyScriptsSection:NewButton("Kakah Menu V3", "Menu V3 do kakazit", function()
+    loadstring(game:HttpGet('https://gist.githubusercontent.com/Siland4551/85bb6c7975792c4a3056fb3b39a82d7d/raw/9ab8b70bbbc271fd54aea98fbe75771fc85bce09/naoeokakamenu'))()
+end)
+
+--Settings
+
+SettingsSection:NewKeybind("Toggle GUI", "GUI toggle key", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
+end)
+
+if game.PlaceId == 155615604 then
+
+    --C1 Hub
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("C1 Hub", "DarkTheme")
+
+local universalTab = Window:NewTab("Universal")
+local LocalPlayerSection = universalTab:NewSection("LocalPlayer")
+local MyScripts = Window:NewTab("Minhas Scripts")
+local MyScriptsSection = MyScripts:NewSection("Minhas Scripts")
+local OutrasScriptsSection = MyScripts:NewSection("Outras")
+local Visuals = Window:NewTab("Visuals")
+local VisualsSelection = Visuals:NewSection("Visuals")
+local Main = Window:NewTab("Prision Life")
+local MainSection = Main:NewSection("Prision  Life")
+local Settings = Window:NewTab("Configurações")
+local SettingsSection = Settings:NewSection("Configurações")
+
+--Universal Tab: LocalPlayer
+
+LocalPlayerSection:NewSlider("Velocidade", "Muda a sua velocidade", 5000, 16, function(s) -- 2000 (MaxValue) | 16 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+LocalPlayerSection:NewSlider("Altura do Pulo", "Muda a altura do seu pulo", 5000, 50, function(jp) -- 2000 (MaxValue) | 50 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = jp
+end)
+
+--Universal Tab: Outras
+
+OutrasScriptsSection:NewButton("Infinite Yield", "Abre o Infinite Yield", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+end)
+
+OutrasScriptsSection:NewButton("CMD-X", "Abre o CMD-X", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+OutrasScriptsSection:NewButton("Domain X", "Abre o Domain X", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+end)
+
+OutrasScriptsSection:NewButton("Unnamed ESP", "Abre o Unnamed ESP", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
+end)
+
+OutrasScriptsSection:NewButton("Eclipse Hub", "Abre o Eclipse Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/Eclipse%20Hub',true))()
+end)
+
+--Visuals: Visuals
+
+VisualsSelection:NewButton("Fullbright", "Liga o Fullbright", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))()
+end)
+
+VisualsSelection:NewButton("NoFog", "Tira o Fog", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cavera165/scpts/main/NoFog", true))()
+end)
+
+
+--Minhas Scripts (Pagas ou Feitas Por mim)
+
+MyScriptsSection:NewDropdown("Kakah Menu", "As versões do Kakah Menu", {"Kakah Menu V2", "Kakah Menu V3", "Option 3"}, function(currentOption)
+    print(loading)
+end)
+
+MyScriptsSection:NewButton("Kakah Menu V2", "Menu V2 do kakazit", function()
+    loadstring(game:HttpGet('https://gist.githubusercontent.com/FriFrai/7dd9b4197e8cd59ab587cb9068c836e6/raw/b47ff3545bd7a788b9aac30495fc344456589fbe/naoeokakamenu'))()
+end)
+
+MyScriptsSection:NewButton("Kakah Menu V3", "Menu V3 do kakazit", function()
+    loadstring(game:HttpGet('https://gist.githubusercontent.com/Siland4551/85bb6c7975792c4a3056fb3b39a82d7d/raw/9ab8b70bbbc271fd54aea98fbe75771fc85bce09/naoeokakamenu'))()
+end)
+
+--Settings
+
+SettingsSection:NewKeybind("Toggle GUI", "GUI toggle key", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
+end)
+
+    MainSection:NewDropdown("Give Gun", "Gives the localplayer a gun", {"M9", "Remington 870", "AK-47"}, function(v)
+        local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver[v].ITEMPICKUP
+        local Event = game:GetService("Workspace").Remote.ItemHandler
+        Event:InvokeServer(A_1)
+    end)
+
+    MainSection:NewDropdown("Gun Mod", "Makes the gun op", {"M9", "Remington 870", "AK-47"}, function(v)
+        local module = nil
+        if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(v) then
+            module = require(game:GetService("Players").LocalPlayer.Backpack[v].GunStates)
+        elseif game:GetService("Players").LocalPlayer.Character:FindFirstChild(v) then
+            module = require(game:GetService("Players").LocalPlayer.Character[v].GunStates)
+        end
+        if module ~= nil then
+            module["MaxAmmo"] = math.huge
+            module["CurrentAmmo"] = math.huge
+            module["StoredAmmo"] = math.huge
+            module["FireRate"] = 0.000001
+            module["Spread"] = 0
+            module["Range"] = math.huge
+            module["Bullets"] = 10
+            module["ReloadTime"] = 0.000001
+            module["AutoFire"] = true
+        end
+    end)
+
+elseif game.PlaceId == 3956818381 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Ninja Legends", "Sentinel")
+
+    -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+    MainSection:NewToggle("Auto Swing", "Make your player autoswing", function(v)
+        getgenv().autoswing = v
+        while true do
+            if not getgenv().autoswing then return end
+            for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                if v:FindFirstChild("ninjitsuGain") then
+                    game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+                    break
+                end
+            end
+            local A_1 = "swingKatana"
+            local Event = game:GetService("Players").LocalPlayer.ninjaEvent
+            Event:FireServer(A_1)
+            wait(0.1)
+        end
+    end)
+
+    MainSection:NewToggle("Auto Sell", "Makes your player autosell", function(v)
+        getgenv().autosell = v
+        while true do
+            if getgenv().autoswing == false then return end
+            game:GetService("Workspace").sellAreaCircles["sellAreaCircle16"].circleInner.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            wait(0.1)
+            game:GetService("Workspace").sellAreaCircles["sellAreaCircle16"].circleInner.CFrame = CFrame.new(0,0,0)
+            wait(0.1)
+        end
+    end)
+
+    MainSection:NewButton("Unlock all islands", "Unlocks all islands", function()
+        local oldcframe = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+        for _,v in pairs(game:GetService("Workspace").islandUnlockParts:GetChildren()) do
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+            wait(0.1)
+        end
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = oldcframe
+    end)
+    
+    MainSection:NewToggle("Auto buy all swords", "Auto buys all swords", function(v)
+        getgenv().buyswords = v
+        while true do
+            if not getgenv().buyswords then return end
+            local A_1 = "buyAllSwords"
+            local A_2 = "Inner Peace Island"
+            local Event = game:GetService("Players").LocalPlayer.ninjaEvent
+            Event:FireServer(A_1, A_2)
+            wait(0.5)
+        end
+    end)
+
+    MainSection:NewToggle("Auto buy all belts", "Auto buys all belts", function(v)
+        getgenv().buybelts = v
+        while true do
+            if not getgenv().buybelts then return end
+            local A_1 = "buyAllBelts"
+            local A_2 = "Inner Peace Island"
+            local Event = game:GetService("Players").LocalPlayer.ninjaEvent
+            Event:FireServer(A_1, A_2)
+            wait(0.5)
+        end
+    end)
+end
