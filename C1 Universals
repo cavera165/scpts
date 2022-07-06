@@ -1,0 +1,29 @@
+local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stebulous/solaris-ui-lib/main/source.lua"))()
+
+--[[SolarisLib:New({
+  Name - Title of the UI <string>
+  FolderToSave - Name of the folder where the UI files will be stored <string>
+})]]
+local win = SolarisLib:New({
+  Name = "C1 universal",
+  FolderToSave = "Scripts"
+})
+
+SolarisLib:Notification("Mensagem de boas vindas", "Bem-Vindo(a)")
+
+--win:Tab(title <string>)
+local tab = win:Tab("Aimbot")
+
+--tab:Section(title <string>)
+local sec = tab:Section("Scripts")
+
+--sec:Button(title <string>, callback <function>)
+sec:Button("Ativar aimbot", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/aimbt'))()
+  SolarisLib:Notification("Aviso", "Aimbot ativado!")
+end)
+
+sec:Button("Unnamed ESP", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
+  SolarisLib:Notification("Aviso", "Unnamed ESP ativado!")
+end)
