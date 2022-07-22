@@ -1,0 +1,10 @@
+_G.AutoFarm = true;
+
+while _G.AutoFarm == true do
+
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1525.17908, 161.585037, 275.824158, 0.963161588, 0.184597015, -0.195559859, 3.49233531e-09, 0.727195799, 0.686430097, 0.268923253, -0.661143124, 0.700407088)
+wait(2)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(706.047729, 229.197281, 160.166351, 0.139229745, 0.773433328, -0.618397892, -1.1862304e-08, 0.624480247, 0.781040609, 0.990260124, -0.10874407, 0.0869462341)
+wait(3)
+end
