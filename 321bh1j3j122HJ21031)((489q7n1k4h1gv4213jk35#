@@ -1,0 +1,30 @@
+local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stebulous/solaris-ui-lib/main/source.lua"))()
+
+--[[SolarisLib:New({
+  Name - Title of the UI <string>
+  FolderToSave - Name of the folder where the UI files will be stored <string>
+})]]
+local win = SolarisLib:New({
+  Name = "Get Eaten! AutoFarm",
+  FolderToSave = "AutoFarm"
+})
+
+--win:Tab(title <string>)
+local tab = win:Tab("AutoFarm")
+
+--tab:Section(title <string>)
+local sec = tab:Section("Get Eaten! AutoFarm")
+
+--sec:Button(title <string>, callback <function>)
+sec:Button("Ativar AutoFarm", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/Get%20Eaten!%20On'))()
+  SolarisLib:Notification("Aviso", "AutoFarm Ativado!")
+end)
+
+--sec:Button(title <string>, callback <function>)
+sec:Button("Desativar Autofarm", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/Get%20Eaten!%20Off'))()
+  SolarisLib:Notification("Aviso", "AutoFarm Desativada!")
+end)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cavera165/scpts/main/123JKM1.%2C.%23JHJ3KLK98DAs"))()
