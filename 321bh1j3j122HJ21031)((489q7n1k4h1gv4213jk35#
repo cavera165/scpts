@@ -5,26 +5,33 @@ local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/St
   FolderToSave - Name of the folder where the UI files will be stored <string>
 })]]
 local win = SolarisLib:New({
-  Name = "Get Eaten! AutoFarm",
-  FolderToSave = "AutoFarm"
+  Name = "SolarisLib",
+  FolderToSave = "SolarisLibStuff"
 })
 
 --win:Tab(title <string>)
-local tab = win:Tab("AutoFarm")
+local tab = win:Tab("Tab 1")
 
 --tab:Section(title <string>)
-local sec = tab:Section("Get Eaten! AutoFarm")
+local sec = tab:Section("Elements")
 
 --sec:Button(title <string>, callback <function>)
-sec:Button("Ativar AutoFarm", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/Get%20Eaten!%20On'))()
-  SolarisLib:Notification("Aviso", "AutoFarm Ativado!")
+sec:Button("Button", function()
+  SolarisLib:Notification("Test", "This is a notification test.")
 end)
 
---sec:Button(title <string>, callback <function>)
-sec:Button("Desativar Autofarm", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/Get%20Eaten!%20Off'))()
-  SolarisLib:Notification("Aviso", "AutoFarm Desativada!")
+--sec:Toggle(title <string>,default <boolean>, flag <string>, callback <function>)
+local toggle = sec:Toggle("Toggle", false,"Toggle", function(t)
+  _G.AutoFarm = t
 end)
+
+while _G.AutoFarm == true do
+
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(730.870911, 656.270508, -101.662163, 0.174819618, -0.900446892, 0.39828819, -9.09576769e-09, 0.404517561, 0.914530218, -0.984600484, -0.159877822, 0.0707175955)
+wait(2)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(858.876709, 363.907806, -100.662064, 0.999976277, -0.00678340951, 0.00119608955, 7.59564234e-09, 0.173648059, 0.984807789, -0.00688805338, -0.984784424, 0.173643932)
+wait(3)
+end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/cavera165/scpts/main/123JKM1.%2C.%23JHJ3KLK98DAs"))()
