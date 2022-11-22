@@ -1684,23 +1684,7 @@ function library:AddWindow(title, options)
 							    for i, v in pairs(keywords) do
 							        K[v] = true
 							    end
-							    S = S:gsub(".", function(c)
-							        if Token[c] ~= nil then
-							            return "\32"
-							        else
-							            return c
-							        end
-							    end)
-							    S = S:gsub("%S+", function(c)
-							        if K[c] ~= nil then
-							            return c
-							        else
-							            return (" "):rep(#c)
-							        end
-							    end)
-
-							    return S
-							end
+							 
 
 							local hTokens = function(string)
 							    local Token =
