@@ -1232,25 +1232,7 @@ function library:AddWindow(title, options)
 
 						local textbox = Prefabs:FindFirstChild("TextBox"):Clone()
 
-						textbox.Parent = new_tab
-						textbox.PlaceholderText = textbox_text
-						textbox.ZIndex = textbox.ZIndex + (windows * 10)
-						textbox:GetChildren()[1].ZIndex = textbox:GetChildren()[1].ZIndex + (windows * 10)
-
-						textbox.FocusLost:Connect(function(ep)
-							if ep then
-								if #textbox.Text > 0 then
-									pcall(callback, textbox.Text)
-									if textbox_options.clear then
-										textbox.Text = ""
-									end
-								end
-							end
-						end)
-
-						return textbox
-					end
-
+				
 					function tab_data:AddSlider(slider_text, callback, slider_options)
 						local slider_data = {}
 
