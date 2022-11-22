@@ -794,10 +794,3 @@ Input_Roundify_4px.Image = "rbxassetid://2851929490"
 Input_Roundify_4px.ImageColor3 = Color3.new(0.290196, 0.294118, 0.313726)
 Input_Roundify_4px.ScaleType = Enum.ScaleType.Slice
 Input_Roundify_4px.SliceCenter = Rect.new(4, 4, 4, 4)
-
-Windows.Name = "Windows"
-Windows.Parent = imgui
-Windows.BackgroundColor3 = Color3.new(1, 1, 1)
-Windows.BackgroundTransparency = 1
-Windows.Position = UDim2.new(0, 20, 0, 20)
-Windows.Size = UDim2.new(1, 20, 1, -20)
