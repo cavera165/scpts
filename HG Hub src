@@ -50,12 +50,14 @@ setclipboard("discord.gg/GGhDPEvz95")
  local CreditSec = Home:CreateSection("Credits")
  --local HubsSec = Hubs:CreateSection("Hubs")
 
- local CreditosOw = Home:CreateParagraph({Title = "Criadores", Content = [[
+local thx = [[
     ! 𝑯𝑼𝑮𝑮𝑼𝑰𝒀𝑻#7577
     ! ! Cavera 165#0001
 
     Discord: discord.gg/GGhDPEvz95
- ]]})
+ ]]
+
+ local CreditosOw = Home:CreateParagraph({Title = "Criadores", Content = thx})
 
 if game.PlaceId == 4520749081 then
 
