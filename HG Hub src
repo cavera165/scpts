@@ -80,7 +80,7 @@ if game.PlaceId == 2474168535 then
 
 end
 
-if game.PlaceId == 2788229376 then -- Da Hood
+elseif game.PlaceId == 2788229376 then -- Da Hood
     local MainSec = Main:CreateSection("Da Hood")
 
     local Button = Main:CreateButton({
@@ -106,7 +106,7 @@ if game.PlaceId == 2788229376 then -- Da Hood
      })
 end
 
-if game.PlaceId == 4520749081 then -- King Legacy
+elseif game.PlaceId == 4520749081 then -- King Legacy
 
     local MainSec = Main:CreateSection("King Legacy")
 
