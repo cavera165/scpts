@@ -1,5 +1,5 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
-LoadingFrame.Version.Text = "V 1.0.0"
+--LoadingFrame.Version.Text = "V 1.0.0"
 
 
 local Window = Rayfield:CreateWindow({
