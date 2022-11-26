@@ -1,0 +1,62 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+LoadingFrame.Version.Text = "V 1.0.0"
+
+
+local Window = Rayfield:CreateWindow({
+    Name = "HG",
+    LoadingTitle = "HG Hub",
+    LoadingSubtitle = "By Hugguiyt team",
+    ConfigurationSaving = {
+       Enabled = false,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "HG Hub"
+    },
+    Discord = {
+       Enabled = true,
+       Invite = "GGhDPEvz95", -- The Discord invite code, do not include discord.gg/
+       RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "HG Hub",
+       Subtitle = "Key System",
+       Note = "Join the discord (discord.gg/GGhDPEvz95)",
+       FileName = "HGKey",
+       SaveKey = true,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "HG_Hub-g7RtUcJkam"
+    }
+ })
+
+setclipboard("discord.gg/GGhDPEvz95")
+
+ Rayfield:Notify({
+    Title = "Discord",
+    Content = "Discord link copied",
+    Duration = 5.5,
+    Image = 4483362458,
+    Actions = { -- Notification Buttons
+       Ignore = {
+          Name = "Ok!",
+          Callback = function()
+          print("1")
+       end
+    },
+ },
+ })
+
+ local Home = Window:CreateTab("Home", 4483362458) -- Title, Image
+ local Main = Window:CreateTab("Scripts", 4483362458) -- Title, Image
+ --local Hubs = Window:CreateTab("Hubs", 4483362458) -- Title, Image
+ 
+ local CreditSec = Home:CreateSection("Credits")
+ --local HubsSec = Hubs:CreateSection("Hubs")
+
+local thx = [[
+    HUGGUIYT 
+    Cavera 165
+
+    Discord: discord.gg/GGhDPEvz95
+ ]]
+
+ local CreditosOw = Home:CreateParagraph({Title = "Criadores", Content = thx})
