@@ -1,0 +1,71 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/HG%20Hub%20normal'))()
+
+if game.PlaceId == 2474168535 then
+   local MainSec = Main:CreateSection("Westbound")
+
+   local Button = Main:CreateButton({
+      Name = "WB HemLish Script",
+      Callback = function()
+         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/HemLish/Game/main/WestBound.lua"))()
+      end,
+   })
+
+   local Button = Main:CreateButton({
+      Name = "PvP Script",
+      Callback = function()
+          loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/westbound%20aimbot'))()
+      end,
+   })
+
+end
+
+elseif game.PlaceId == 2788229376 then -- Da Hood
+    local MainSec = Main:CreateSection("Da Hood")
+
+    local Button = Main:CreateButton({
+        Name = "Vortex",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/vortex%20da%20hood'))()
+        end,
+     })
+
+     local Button = Main:CreateButton({
+        Name = "Ray X",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+        end,
+     })
+
+     local Button = Main:CreateButton({
+        Name = "Faded V3 - Toggle Key is V",
+        Callback = function()
+            _G.Toggles = "V"
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded-Grid/main/YesEpic", true))()
+        end,
+     })
+end
+
+elseif game.PlaceId == 4520749081 then -- King Legacy
+
+    local MainSec = Main:CreateSection("King Legacy")
+
+    local Button = Main:CreateButton({
+        Name = "Mukuro Hub",
+        Callback = function()
+            loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+        end,
+     })
+
+     local Button = Main:CreateButton({
+        Name = "One X Hub",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/xOne2/King-Legacy/main/README.md"))()
+        end,
+     })
+     
+end
+
+else
+
+   print("not supported game")
+end   
