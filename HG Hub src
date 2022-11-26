@@ -1,4 +1,6 @@
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/Rayfield535'))()
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+LoadingFrame.Version.Text = "V 1.0.0"
+
 
 local Window = Rayfield:CreateWindow({
     Name = "HG",
@@ -58,6 +60,25 @@ local thx = [[
  ]]
 
  local CreditosOw = Home:CreateParagraph({Title = "Criadores", Content = thx})
+
+if game.PlaceId == 2474168535 then
+   local MainSec = Main:CreateSection("Westbound")
+
+   local Button = Main:CreateButton({
+      Name = "WB HemLish Script",
+      Callback = function()
+         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/HemLish/Game/main/WestBound.lua"))()
+      end,
+   })
+
+   local Button = Main:CreateButton({
+      Name = "PvP Script",
+      Callback = function()
+          loadstring(game:HttpGet('https://raw.githubusercontent.com/cavera165/scpts/main/westbound%20aimbot'))()
+      end,
+   })
+
+end
 
 if game.PlaceId == 2788229376 then -- Da Hood
     local MainSec = Main:CreateSection("Da Hood")
